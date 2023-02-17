@@ -1,4 +1,4 @@
-/*var name = "Mohit Sharma";
+var name = "Mohit Sharma";
 
 var age = 24;
 var weight = 50;
@@ -15,7 +15,7 @@ console.log("type of address", typeof graduation);
 
 var city = null;
 console.log("city: ", city);
-console.log("type of city", typeof city);*/
+console.log("type of city", typeof city);
 
 
 var num1 = 100;
