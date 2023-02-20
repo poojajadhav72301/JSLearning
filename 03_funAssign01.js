@@ -40,5 +40,5 @@ function addThreeValues(n1, n2, n3){
 var addResult = addThreeValues(10.23, 600, 40);
 console.log("Addition of three numbers:", addResult);
 
-var addResult = addThreeValues("Hello", "Good", "Morning");
+var addResult = addThreeValues("Hello ", "Good ", "Morning ");
 console.log("Message:", addResult);
