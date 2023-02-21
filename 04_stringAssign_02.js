@@ -41,6 +41,6 @@ function stringHandsOn(){
     var stringStarts = strTrim.startsWith("Hey");
     console.log(stringStarts);
 
-    console.log("Length o f string is:", str.length);
+    console.log("Length o f string is:", strTrim.length);
 }
 stringHandsOn();
