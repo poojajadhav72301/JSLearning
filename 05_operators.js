@@ -38,3 +38,18 @@ console.log(`****** Comparison operators *******`);
  var num4 = 10;
  console.log(num3==num4); // 10==10
  console.log(num3===num4);
+
+ //ternary operator
+
+ var marks = 70;
+ var result = marks >= 60 ? "Allow" : "Not allow";
+ console.log(result);
+
+ var age = 15;
+ var res = age >= 18 ? "Allow" : "Not allow";
+ console.log(res);
+
+ //even or odd
+ var num = 6;
+ var result = num % 2 == 0 ? "Even" : "Odd";
+ console.log(result);
