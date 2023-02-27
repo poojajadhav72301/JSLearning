@@ -56,18 +56,19 @@ console.log("******************************************");
 console.log(" ");
 console.log("***** Marriage eligilibity for male ****");
 function maleEligibility(gender, age, boyName){
+    if (age < 0 || age==undefined ) {
+        console.log(`Hey ${boyName} your age ${age} is not valid`);
+    }
     if(gender == "Male" && age >= 21){
-        return "you are eligible for marriage";
+        console.log("you are eligible for marriage");
     }
     else{
-        return "you are not eligible for marriage"
+        console.log("you are not eligible for marriage");
     }
 }
-var result = maleEligibility("Male", 25, "Bill Gates");
-console.log(`Bill Gates ${result}`);
+maleEligibility("Male", 25, "Bill Gates");
+maleEligibility("Male", -17, "Stew Jobs");
 
-var result = maleEligibility("Male", 17, "Stew Jobs");
-console.log(`Stew Jobs ${result}`);
 
 console.log(" ");
 console.log("***** Marriage eligilibity for female ****");
