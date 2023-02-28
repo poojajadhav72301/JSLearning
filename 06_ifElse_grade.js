@@ -39,7 +39,12 @@ console.log(result);
 console.log(" ");
 console.log("***** Grade calculation *****");
 function gradeCalculation(marks){
-    if(marks >= 90 && marks <= 100){
+    if(marks <= 0 || marks > 100 ||isNaN(marks) ||  (typeof marks != "number")){
+        console.log(`your ${marks} marks invalid`);
+    }
+    else{
+
+    if(marks >= 90){
         console.log(`Funtastic marks: ${marks}, your grade is A+`);
     }
     if(marks >= 75 && marks < 90){
@@ -51,9 +56,7 @@ function gradeCalculation(marks){
     if(marks >= 35 && marks < 50){
         console.log(`Marks: ${marks}, your grade is C, need improvement`);
     }
-    if(marks <= 0 || marks >= 100 || marks == NaN || marks == null || (typeof marks != "number")){
-        console.log(`your ${marks} marks invalid`);
-    }
+}
 }
 gradeCalculation(98);
 gradeCalculation(80);
