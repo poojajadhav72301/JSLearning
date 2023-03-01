@@ -12,7 +12,7 @@ for(let num = 50; num >=40; num--){
 
 console.log(" ");
 console.log("** WAP to find first 15 odd no **");
-for(let num = 1; num <= 20; num = num + 2){
+for(let num = 1; num <= 30; num = num + 2){
     console.log(num);
 }
 
