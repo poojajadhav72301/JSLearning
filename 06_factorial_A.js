@@ -1,6 +1,6 @@
 console.log("***** calculate factorial of number ******");
 function factorialOfNum(num){
-    fact = 1;
+   let fact = 1;
     if((num <= 0) || (num == null) || (typeof num != "number") || isNaN(num)){
         return `${num} is invalid number`;
     }

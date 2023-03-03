@@ -1,6 +1,6 @@
 console.log("***** Calculate the factorial of total count of words ******");
 function factorialOfWordCount(str){
-    fact = 1;
+    let fact = 1;
     if(typeof str === "string" && str != ""){
         let strSplit = str.split(" ");
         strSplitLen = strSplit.length;
