@@ -83,3 +83,21 @@ var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
 arrayOfNumbers.splice(2, 1, 50, 60);
 console.log(arrayOfNumbers);
 
+console.log(" ");
+console.log("Tranversing an array");
+var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    const element = arrayOfNumbers[index];
+    console.log(element);
+}
+
+console.log(" ");
+console.log("Sum of array");
+var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45];
+let sum = 0;
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    const element = arrayOfNumbers[index];
+    sum = sum + 10;
+}
+console.log(`Sum: ${sum}`);
+
