@@ -13,6 +13,7 @@ const arrayNew = array.map( (element) => {
 } )
 console.log(arrayNew);
 
+//length 
 const arrayOfNames = ["Rupesh Dhumal", "Rutuja Pawar", "Nayan", "Pralhad"];
 const arrayLen = arrayOfNames.map( (element) => {
     return element.length;
