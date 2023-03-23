@@ -1,4 +1,4 @@
-const isSirAvailable = false;
+const isSirAvailable = true;
 let promiseForNotes = new Promise( (resolve, reject) =>{
     if (isSirAvailable) {
         resolve("promise and map.pdf");
