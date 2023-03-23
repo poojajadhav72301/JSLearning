@@ -19,3 +19,4 @@ const arrayEven = array.filter((element) => {
      return element % 2 == 0;
 });
 console.log(arrayEven);
+
