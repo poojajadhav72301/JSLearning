@@ -71,3 +71,18 @@ const sumOfSalary = arraysalary.reduce((runningTotal, value) => {
 let average = sumOfSalary / arraysalary.length;
 console.log(`Average salary: ${average}`);
 
+console.log(" ");
+console.log("********** step 5 average salary of IT dept ************");
+const arraydept = arrayEmps.filter((element) => {
+    return element.emp_dept == "IT";
+});
+
+const arraydeptSal = arraydept.map((element) => {
+    return element.emp_salary;
+});
+
+const sumOfDept = arraydeptSal.reduce((runningTotal, value) => {
+    return runningTotal + value;
+});
+let avgdept = sumOfDept / arraydeptSal.length;
+console.log(`Average of IT dept salary: ${avgdept}`);
