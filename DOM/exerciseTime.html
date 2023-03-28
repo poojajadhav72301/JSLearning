@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exercise time </title>
+    </head>
+    <body>
+        
+       <main>
+          <div id="overview">
+              <h1 id="heading1"> HTML and JavaScript are crucial technologies </h1>
+              <p>
+                The web would not work without them...
+              </p>
+          </div>
+
+          <div id="advantages">
+             <ul>
+                <li> Flexible </li>
+                <li> Available </li>
+                <li> Magical </li>
+             </ul>
+          </div>
+       </main>
+
+       <script>
+          console.log("*********** h1 element store in mainHeading ************");
+          const mainHeading = document.getElementById("heading1");
+          console.log(mainHeading.innerHTML);
+
+          console.log(" ");
+          console.log("*********** li element store in secondAdvantages ************");
+          const secondAdvantages = document.getElementsByTagName("li");
+          console.log(secondAdvantages[1].innerHTML);
+
+          console.log(" ");
+          console.log("*********** advDiv store <div> with the id advantages ************");
+          const advDiv = document.querySelector("#advantages");
+          console.log(advDiv.innerHTML);
+       </script>
+
+    </body>
+</html>
