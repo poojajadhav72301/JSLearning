@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+   
+    <button type="button" id="hobbies"> Add hobbies </button>
+
+    <button type="button" id="prime"> Prime num is not </button>
+
+    <script>
+        const elementHobbies = document.querySelector("#hobbies");
+        elementHobbies.addEventListener('click', () => {
+            const elementHobby = prompt("enter hobby", "hobby");
+            console.log(elementHobby);
+        });
+
+         const elementNum = document.querySelector("#prime");
+         elementNum.addEventListener('click', () => {
+            const number = prompt("enter number", 0);
+            let flag = true;
+            for(let i = 2; i < number; i++){
+                if(number % i == 0){
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag == true){
+                console.log(`${number} is prime number`);
+            }
+            else{
+                console.log(`${number} is not prime number`);
+            }
+         });
+
+    </script>
+
+</body>
+</html>

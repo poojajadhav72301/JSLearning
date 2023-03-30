@@ -44,3 +44,38 @@ elementDivProject.removeChild(elementProject);
 const elementUlItem = document.querySelector("#ulItem");
 const eleLi = document.querySelector("#listItem");
 elementUlItem.removeChild(eleLi);
+
+console.log("====== Adding Element =====");
+const elementDiv = document.querySelector("#divProject");
+const elementP = document.createElement("p");
+const elementText = document.createTextNode("Team Size - 7");
+elementP.appendChild(elementText);
+elementDiv.appendChild(elementP);
+
+const elementAddress = document.querySelector("#address");
+elementAddress.addEventListener("click", () => {
+  console.log("Listening click event");
+});
+
+elementAddress.addEventListener("mouseover", () => {
+  console.log("mouse over");
+ });
+
+function show(){
+     console.log("Click event....");
+}
+
+const elementEven = document.getElementById("isEvenButton");
+elementEven.addEventListener('click', () => {
+    const inputValue = prompt("Enter the number");
+    console.log(inputValue);
+    const result = inputValue%2==0 ? true : false;
+    if(result){
+       alert(`${inputValue} is even number`);
+    }
+    else{
+      alert(`${inputValue} is not even number`);
+    }
+});
+
+
