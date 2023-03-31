@@ -3,11 +3,12 @@
 <html lang="en">
 <head>
     
-    <title>Document</title>
+    <title>Event </title>
 </head>
 <body>
    
     <button type="button" id="hobbies"> Add hobbies </button>
+    <p></p>
 
     <button type="button" id="prime"> Prime num is not </button>
 
@@ -16,13 +17,32 @@
         elementHobbies.addEventListener('click', () => {
             const elementHobby = prompt("enter hobby", "hobby");
             console.log(elementHobby);
+           
         });
 
          const elementNum = document.querySelector("#prime");
          elementNum.addEventListener('click', () => {
             const number = prompt("enter number", 0);
             let flag = true;
-            for(let i = 2; i < number; i++){
+            let inputValue = +number;
+            if(typeof inputValue != "number" || inputValue <= 1){
+                alert(`${inputValue} is invalid data`);
+            }
+            else{
+                for(let i = 2; i < inputValue; i++){
+                    if(inputValue % i == 0){
+                        flag = false;
+                        break;
+                    }
+                }
+                if(flag == true){
+                    alert(`${inputValue} is prime number`);
+                }
+                else{
+                    alert(`${inputValue} is not prime number`);
+                }
+            }
+            /*for(let i = 2; i < number; i++){
                 if(number % i == 0){
                     flag = false;
                     break;
@@ -33,7 +53,7 @@
             }
             else{
                 console.log(`${number} is not prime number`);
-            }
+            }*/
          });
 
     </script>

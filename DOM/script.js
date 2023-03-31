@@ -65,17 +65,45 @@ function show(){
      console.log("Click event....");
 }
 
+// promt() alert()
 const elementEven = document.getElementById("isEvenButton");
 elementEven.addEventListener('click', () => {
-    const inputValue = prompt("Enter the number");
-    console.log(inputValue);
-    const result = inputValue%2==0 ? true : false;
-    if(result){
-       alert(`${inputValue} is even number`);
+    let num = prompt("enter number", 0);
+    let inputValue = +num;
+    if( typeof inputValue == "number"){
+        if(inputValue % 2 == 0){
+            alert(`${inputValue} is even number`);
+        }
+        else{
+            alert(`${inputValue} is not even number`);
+        }
     }
     else{
-      alert(`${inputValue} is not even number`);
+        alert(`${inputValue} is invalid`);
     }
 });
 
 
+
+//confirm()
+const confirmElement = document.querySelector("#confirm");
+confirmElement.addEventListener('click',  () => {
+   const result = confirm("Are you sure ?");
+   console.log(result);
+});
+
+/*const isEvenButton = document.querySelector("#isEvenButton");
+isEvenButton.addEventListener('click', () => {
+    const inputValue = prompt("Please enter number to check..", 0);
+    const givenNum = +inputValue;
+    if (inputValue==null || isNaN(givenNum) || givenNum<0) {
+        alert("Invalid value");
+    }else{
+        const result = inputValue%2==0 ? true : false;
+        if(result){
+            alert("Given Number is Even");
+        }else{
+            alert("Given number is Odd");
+        }
+    }
+} );*/
